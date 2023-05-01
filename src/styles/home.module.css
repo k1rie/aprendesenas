@@ -1,0 +1,129 @@
+
+.banercontainer{
+    width: 100vw;
+    height: 45vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #E6E6E6;
+}
+
+.banerinfo{
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+p{
+    color: black;
+    font-family: 'Sora', sans-serif;
+
+}
+.p1{
+    font-size: 3rem;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.p2{
+    font-size: 2rem;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.startbutton{
+    font-family: 'Sora', sans-serif;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    background: red;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
+    transition: 1s all;
+}
+
+.startbutton:hover{
+    box-shadow: 0 0 25px red;    cursor: pointer;
+}
+
+.line{
+    height: 70%;
+    width: 1px;
+    background-color: black;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.banerimg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+}
+
+.textcontainer{
+   height:  15%
+}
+
+.maintext{
+font-size: 1rem;
+}
+
+.cardscontainer{
+    width: 100vw;
+    height: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+    row-gap: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .cardscontainer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .cardscontainer{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+   .line{
+       display: none;
+   }
+
+    .banerinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column: 1/3;
+
+    }
+
+    .banerimg{
+        scale: 0.5;
+display: none;
+    }
+    .p1{
+        text-align: center;
+    }
+    .p2{
+        text-align: center;
+    }
+    .startbutton{
+        grid-column: 1/3;
+    }
+}

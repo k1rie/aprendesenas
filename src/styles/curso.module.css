@@ -1,0 +1,15 @@
+.cursocontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video{
+    width: 100vw;
+    height: 50vh;
+
+}
+
+.p{
+    text-align: center;
+}
